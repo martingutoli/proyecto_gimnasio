@@ -1,0 +1,15 @@
+{% extends 'gimnasio/base.html' %}
+
+{% block titulo %} Clientes {% endblock  %}
+
+{% block info %}
+
+<h1> Hola de nuevo </h1>
+<p> En esta seccion podras llevar un registro de tus clases </p>
+<p>Listado de clientes </p>
+
+    {% for cliente in clientes %}
+        <p style="color: blue"> {{cliente.nombre}}, {{cliente.apellido}}, {{cliente.dni}}, {{cliente.email}}</p>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'gimnasio/base.html' %}
+
+
+
+{% block titulo %} Actividades {% endblock  %}
+
+{% block info %}
+
+<h1> Seccion actividades </h1>
+<p> En esta seccion vas a poder elegir el tipo de actividad que quieras hacer, siempre las vamos actualizando para brindarte lo mejor </p>
+<p>Listado de actividades </p>
+
+    {% for actividad in actividades %}
+        <p style="color: blue"> {{actividad.nombre_actividad}}</p>
+    {% endfor %}
+
+{% endblock %}
